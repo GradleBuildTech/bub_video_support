@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../video_factory.dart';
-
+///[Dummy]
 class BuildVideoLayout extends StatefulWidget {
   final bool isLoading;
   final List<Widget> listWidget;

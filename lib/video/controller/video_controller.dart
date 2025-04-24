@@ -1,4 +1,3 @@
-import 'package:edu_code_league_mobile/data/object/entities/lessons/lesson.dart';
 import 'package:flutter/material.dart';
 
 enum VideoStatus { play, pause, stop }
@@ -26,7 +25,6 @@ class VideoController {
 
   String subVideoTitle = "";
 
-  Lesson? lesson;
 
   GlobalKey<State>? screenControlKey;
 
@@ -53,12 +51,6 @@ class VideoController {
     subVideoTitle = title;
   }
 
-  void setLesson(Lesson lesson) {
-    this.lesson = lesson;
-    videoUrl = lesson.videoURL ?? "";
-    videoTitle = lesson.title ?? "";
-  }
-
   void setScreenControlKey(GlobalKey<State>? key) {
     screenControlKey = key;
   }
@@ -69,6 +61,5 @@ class VideoController {
     videoTitle = "";
     subVideoTitle = "";
     currentPosition = Duration.zero;
-    lesson = null;
   }
 }
